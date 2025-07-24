@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./VideoSlider.css";
 
 const videos = [
-  require("../assest/Dm.mp4"),
-  require("../assest/web.mp4"),
-  require("../assest/mobile.mp4"),
+  require("../assets/Dm.mp4"),
+  require("../assets/web.mp4"),
+  require("../assets/mobile.mp4"),
 ];
 
 const animatedTexts = [

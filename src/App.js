@@ -2,7 +2,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-// import VideoSlider from './components/VideoSlider';
+import VideoSlider from './components/VideoSlider';
 import About from './components/About';
 
 
@@ -11,7 +11,7 @@ function App() {
     <div>
        <Navbar />
        <Home/>
-       {/* <VideoSlider/>  */}
+       <VideoSlider/> 
        <About/>  
       
       
