@@ -54,7 +54,7 @@ const VideoSlider = () => {
 
         {/* Animated Text and Buttons */}
         <div className="hero-content">
-          <h1 className="animated-text">{animatedTexts[current]}</h1>
+          <h1 className="animated-text" data-aos="type" data-aos-delay="1000">{animatedTexts[current]}</h1>
           <div className="buttons">
             <a href="#" className="btn schedule">Schedule Call</a>
             <a href="#" className="btn contact">Contact</a>

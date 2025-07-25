@@ -125,6 +125,7 @@
   font-size: 14px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-bottom: -4rem;
 }
 .updated-stats {
   display: grid;
