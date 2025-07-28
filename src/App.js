@@ -4,8 +4,13 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import VideoSlider from './components/VideoSlider';
 import About from './components/About';
+import Footer from './components/footer';
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+
 
 
 
@@ -25,6 +30,7 @@ function App() {
        <Home/>
        <VideoSlider/> 
        <About/>  
+       <Footer/>
       
       
     </div>

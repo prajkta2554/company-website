@@ -5,7 +5,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="video-background">
         {/* <VideoSlider /> */}
         {/* <About />  */}

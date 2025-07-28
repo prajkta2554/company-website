@@ -166,3 +166,81 @@
   margin-top: 8px;
   line-height: 1.6;
 }
+
+/* .about-points {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.point h4 {
+  font-size: 18px;
+  color: #1da1f2;
+  margin-bottom: 6px;
+}
+
+.point p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+} */
+
+.about-point-section {
+  background-color: #f8f9fa; /* Section background */
+  width: 100%; /* Full viewport width */
+  padding: 60px 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.about-point {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-point-heading {
+  text-align: center;
+  margin-top: -4rem;
+}
+
+
+.about-point-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.about-point-heading h5 {
+  font-size: 25px;
+  color: #179f99;
+}
+
+.about-point-heading h2 {
+  font-size: 20px;
+  color: #222;
+  /* max-width: 800px; */
+  margin-top: -2rem;
+  text-align: center;
+}
+
+.about-point-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-point-left,
+.about-point-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-point-left h4,
+.about-point-right h4 {
+  margin-top: 20px;
+  color: #111;
+}
