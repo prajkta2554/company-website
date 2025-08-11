@@ -33,7 +33,7 @@
 .about-section {
   padding: 60px 5%;
   background-color: #fff;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   margin-top: -5rem;
 }
 
@@ -56,6 +56,8 @@
   font-weight: bold;
   margin-bottom: 20px;
   font-size: 30px;
+  /* text-align: center; */
+ 
 }
 
 .about-left h2 {
@@ -150,7 +152,7 @@
 }
 
 .stat-value span {
-  color: #00124a;
+  color: #179f99;
   font-size: 28px;
 }
 
@@ -186,42 +188,91 @@
   line-height: 1.5;
 } */
 
-.about-point-section {
-  background-color: #f8f9fa; /* Section background */
-  width: 100%; /* Full viewport width */
-  padding: 60px 0px;
-  box-sizing: border-box;
-  overflow-x: hidden;
+.More-left{
+  margin-top: -4rem;
+  padding-left: 40px;
+  color: #179f99;
+ font-size: large;
+
 }
 
-.about-point {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.about-point-section {
+   /* background-color: #1e4e56;  */
+   /* width:100%; 
+  padding: 50px;
+  height: 20%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-top: -2rem;
+  margin-bottom: 3em;
+ margin-left: -3rem;
+ margin-right: 3rem; */
+ 
 }
+.info{
+ position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.about-heading h5{
+  margin-top: -100rem;
+  color: #179f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  position: fixed;
+  align-content: center;
+  
+}
+  
+
+
+.about-point {
+  /* width: 90rem; */
+  margin-top: -3rem;
+  padding: 50 0px;
+  height: 500px; 
+  align-content: center;
+ margin: auto;
+  background-color: #aaa;
+ 
+  
+
+}
+
 
 .about-point-heading {
   text-align: center;
-  margin-top: -4rem;
+  margin-top: -20rem;
+  padding: 50px;
+  
+
 }
-
-
 .about-point-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 50px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  
 }
 
 .about-point-heading h5 {
   font-size: 25px;
   color: #179f99;
+  margin-top: 3rem;
+ 
 }
 
 .about-point-heading h2 {
   font-size: 20px;
-  color: #222;
-  /* max-width: 800px; */
+  color: #000000;
+  
   margin-top: -2rem;
   text-align: center;
 }
@@ -244,3 +295,11 @@
   margin-top: 20px;
   color: #111;
 }
+.aboutsection{
+  display: flex;
+}
+.aboutsection h5{
+  text-align: center;
+}
+ 
+ 

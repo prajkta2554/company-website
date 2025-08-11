@@ -2,11 +2,13 @@
   position: fixed;
   top: 0;
   left: 0;
+  height: 50px;
   width: 100%;
   z-index: 1000;
   background-color: white;
   padding: 15px 40px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'DM Sans', sans-serif;
 }
 
 .navbar-container {
@@ -22,7 +24,7 @@
   align-items: center;
   gap: 10px;
   transition: transform 0.3s ease;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 /* Slight left shift on hover */
@@ -31,15 +33,16 @@
 }
 
 .logo {
-  height: 60px;
+  height: 50px;
   margin-left: -9rem;
+  
 }
 
 .brand-name {
   font-size: 1.8rem;
   font-weight: bold;
   color: #179f99;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 .nav-links {
@@ -58,12 +61,18 @@
   font-size: large;
   letter-spacing: normal;
   transition: color 0.3s ease;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
+.nav-links a.active {
+  color: #179f99;
 
+  
+  
+}
 .nav-links li a:hover {
   color: #179f99;
 }
+
 
 .nav-links li a::after {
   content: "";

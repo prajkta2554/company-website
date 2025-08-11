@@ -1,0 +1,136 @@
+
+ .services-page {
+  padding : 50px;
+  background-color: white;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  margin-top: -3rem;
+}
+
+.services-title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #179f99;
+  text-align: center;
+  margin-top: -3rem;
+  
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem 2rem; 
+  
+}
+
+.service-card {
+  perspective: 1000px;
+  position: relative;
+  
+}
+
+.flip-card {
+ width: 100%;
+ height: 320px;
+ position: relative;
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+.service-icon {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  pointer-events: none; /* Ensures video doesn't interfere with hover */
+  z-index: 0;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  box-sizing: border-box;
+   
+}
+
+.flip-front {
+  background: #ffffff;
+  z-index: 2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.flip-front h3{
+  font-family: 'DM Sans', sans-serif;
+ font-size: 1.8rem;
+  margin: 0;
+
+}
+
+.flip-front p {
+ font-size: 0.9rem;
+  margin: 1rem;
+}
+
+.flip-back {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.flip-content h3 {
+  font-size: 1.2rem;
+ margin: 0;
+ 
+}
+
+.flip-content p {
+  font-size: 0.9rem;
+  padding: 0 1rem;
+}
+
+.learn-more-btn {
+  margin-top: 1rem;
+  background: #ffffff;
+  color: #179f99;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #e3e3e3;
+}

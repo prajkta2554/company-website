@@ -5,9 +5,17 @@ import Home from './components/Home';
 import VideoSlider from './components/VideoSlider';
 import About from './components/About';
 import Footer from './components/footer';
+import AboutMore from './components/AboutMore';
+import Services from './components/Services';
+import ServicesMore from './components/ServicesMore';
+import Contact from './components/Contact'
+
+
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import {  BrowserRouter,Routes, Route } from 'react-router-dom';
+
 
 
 
@@ -25,15 +33,68 @@ function App() {
   }, []);
   
   return (
-    <div>
-       <Navbar />
-       <Home/>
-       <VideoSlider/> 
-       <About/>  
-       <Footer/>
+    
+    <BrowserRouter>
+    
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <VideoSlider />
+              <About />
+              <Services />
+              <Contact />
+              <Footer />
+
+            </>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <>
+              <About />
+              <Footer />
+            </>
+          }
+        />
+         <Route
+          path="/home"
+          element={
+            <>
+            <VideoSlider />
+              <About />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/about-more"
+          element={
+            <>
+              <AboutMore />
+              <Footer />
+            </>
+          }
+        />
+
+    <Route
+          path="/Services-more"
+          element={
+            <>
+              <ServicesMore />
+              <Footer />
+            </>
+          }
+        />
+
+      </Routes>
       
-      
-    </div>
+    </BrowserRouter>
+    
   );
 }
 
