@@ -11,14 +11,14 @@
   flex-wrap: wrap;
   gap: 10px;
   padding-inline: 20px;  
-   transform: translateX(-5px);
+  transform: translateX(-5px);
 
 }
 
 .footer-column {
   flex: 1;
   min-width: 220px;
-   padding-left: 10px;
+  padding-left: 10px;
 }
 
 .footer-column h2,
@@ -30,17 +30,17 @@
 .footer-column i{
   padding-left: 10px;
   font-size: 20px;
+  flex-shrink: 0;
+ 
   
-}
-.footer-column h3{
- 
- 
 }
 
 .footer-column p {
   margin: 8px 0;
   color: #ccc;
+
 }
+
 
 .footer-column a {
   color: #179f99;
@@ -55,7 +55,7 @@
   display: flex;
   gap: 10px;
   margin-top: 10px;
-padding: 0;
+  padding: 0;
 }
 .newsletter-form input {
   padding: 5px;
@@ -81,7 +81,7 @@ padding: 0;
   font-size: 14px;
   color: #aaa;
 }
- .social-icons i {
+ /* .social-icons i {
   border: 2px solid #fff;
   color: #fff;
   font-size: 20px;
@@ -91,9 +91,28 @@ padding: 0;
   transition: 0.3s ease;
   cursor: pointer;
   align-items: left;
+  
+} */
+
+.footer-column i:hover {
+ color: #179f99; /* or any color you want  */
+  
 }
 
-.social-icons i:hover {
-  background-color: #00bcd4; /* or any color you want  */
+.footer-item {
+  display: flex;
+  align-items: center;   /* align icon & text vertically */
+  gap: 10px;             /* space between icon and text */
+  margin: 8px 0;
+  /* font-size: 1.2rem; */
   color: #fff;
+}
+
+.footer-icon {
+  font-size: 1.2rem;
+  color: #fff;
+  flex-shrink: 0;        /* keeps icon size fixed */
+}
+.footer-icon:hover {
+  color: #179f99;   /* also change text color (optional) */
 }

@@ -54,10 +54,11 @@ const Contact = () => {
             
             <select required defaultValue="">
             <option value="" disabled>Select a service...</option>
-            <option value="web-development">Web Development</option>
-            <option value="mobile-app">Mobile App Development</option>
-            <option value="ui-ux">UI/UX Design</option>
-            <option value="seo">SEO Optimization</option>
+            <option value="web-development">Career</option>
+            <option value="mobile-app">Digital Marketing Services</option>
+            <option value="ui-ux">IT Solutions</option>
+            <option value="seo">Schedule a Demo</option>
+            <option value="seo">Collaboration</option>
           </select>
           
             

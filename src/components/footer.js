@@ -1,7 +1,8 @@
 import React from "react";
-import "./footer.css";
+import "./Footer.css";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -19,9 +20,9 @@ const footer = () => {
         {/* Address */}
         <div className="footer-column">
           <h3>Contact</h3>
-          <p>#43, Pashupathinath Nagar, Jaipur, Rajasthan 302031</p>
-          <p> (+91) 9352072936</p>
-          <p>info@logiclitesolutions.in</p>
+          <p className="footer-item"><FaMapMarkerAlt className="footer-icon" />#43, Pashupathinath Nagar, Jaipur, Rajasthan 302031</p>
+          <p className="footer-item"><FaPhoneAlt className="footer-icon" />(+91) 9352072936</p>
+          <p className="footer-item"><FaEnvelope className="footer-icon" />info@logiclitesolutions.in</p>
         </div>
 
         {/* Quick Links */}
@@ -31,16 +32,14 @@ const footer = () => {
           <p><a href="#contact">Contact Us</a></p>
           <p><a href="#services">Services</a></p>
           <p><a href="#">Careers</a></p>
-          <p><a href="#">Project</a></p>
-          <p><a href="#">Pricing</a></p>
+        
         </div>
 
         <div className="footer-column">
           <h3>Useful Links</h3>
           <p><a href="#">Privacy Policy</a></p>
-          <p><a href="#">terms & condition</a></p>
+          <p><a href="#">Terms & condition</a></p>
           <p><a href="#">Disclaimer</a></p>
-          <p><a href="#">Careers</a></p>
           <p><a href="#">Support</a></p>
           <p><a href="#">FAQ</a></p>
          </div>
@@ -63,4 +62,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

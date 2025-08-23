@@ -15,6 +15,8 @@ import DM from '../assets/DM.jpg';
 
 
 
+
+
 const services = [
   {
     
@@ -45,6 +47,7 @@ const services = [
   
  
 ];
+
 
 const Services = () => {
  const navigate = useNavigate();
@@ -100,6 +103,8 @@ const Services = () => {
 </div>
         ))}
       </div>
+
+      
     </section>
       
           

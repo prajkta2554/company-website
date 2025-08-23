@@ -42,7 +42,6 @@
   font-size: 1.8rem;
   font-weight: bold;
   color: #179f99;
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 .nav-links {
@@ -61,7 +60,6 @@
   font-size: large;
   letter-spacing: normal;
   transition: color 0.3s ease;
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 .nav-links a.active {
   color: #179f99;

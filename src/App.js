@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import VideoSlider from './components/VideoSlider';
 import About from './components/About';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import AboutMore from './components/AboutMore';
 import Services from './components/Services';
 import ServicesMore from './components/ServicesMore';
@@ -90,6 +90,7 @@ function App() {
             </>
           }
         />
+         <Route path="*" element={<h2 style={{ textAlign: "center" }}>404 Page Not Found</h2>} />
 
       </Routes>
       
