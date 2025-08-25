@@ -1,10 +1,10 @@
 
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import VideoSlider from './components/VideoSlider';
 import About from './components/About';
-import Footer from './components/Footer';
+import Footer from './components/Footer ';
 import AboutMore from './components/AboutMore';
 import Services from './components/Services';
 import ServicesMore from './components/ServicesMore';
@@ -47,7 +47,7 @@ function App() {
               <About />
               <Services />
               <Contact />
-              <Footer />
+              <Footer  />
 
             </>
           }
@@ -57,7 +57,7 @@ function App() {
           element={
             <>
               <About />
-              <Footer />
+              <Footer  />
             </>
           }
         />
@@ -67,7 +67,7 @@ function App() {
             <>
             <VideoSlider />
               <About />
-              <Footer />
+              <Footer  />
             </>
           }
         />
@@ -76,7 +76,7 @@ function App() {
           element={
             <>
               <AboutMore />
-              <Footer />
+              <Footer  />
             </>
           }
         />
