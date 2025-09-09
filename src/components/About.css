@@ -291,25 +291,7 @@ body {
   margin-bottom: 18px;
 }
 
-/* Responsive (Mobile) */
-@media (max-width: 768px) {
-  .Who-content {
-    flex-direction: column; /* stack image below content */
-    text-align: center;
-  }
 
-  .wedo-content {
-    text-align: center;
-  }
-
-  .wedo-content h2 {
-    font-size: 1.6rem;
-  }
-
-  .wedo-image {
-    max-width: 100%;
-  }
-}
 
 .breadcrumb {
   font-size: 1rem;
@@ -327,10 +309,6 @@ body {
 
 .breadcrumb span {
   margin: 0 5px;
-}
-
-.why-section { 
-  padding: 4rem 1.5rem;
 }
 
 .why-header {
@@ -509,20 +487,6 @@ body {
   margin: 0 auto;
 }
 
-/* Card */
-/* .team-card {
-  background: #fff;
-  padding: 25px 20px;
-  text-align: center;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-}*/
-
-/* .team-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-} */
 
 /* Image */
 .team-card img {

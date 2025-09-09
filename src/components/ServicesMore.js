@@ -1,11 +1,32 @@
 import React from "react";
 import "./Services.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import { FaBullhorn, FaCode, FaUsersCog, FaBalanceScale, FaSmile, FaChartLine, FaUserGraduate, FaFolderOpen, FaBolt } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/pagination";
 import About from "../assets/About.jpg"
+import digital from "../assets/digital.jpeg";
+import mobile from "../assets/mobile.png";
+import staff from "../assets/staff.jpeg";
+import Taxx from "../assets/Taxx.jpg";
+
+import wave from "../assets/green.jpg"
+
+import react from "../assets/react.png";
+import javascript from "../assets/javascript.webp";
+import java from "../assets/java.png";
+import c from "../assets/c.png";
+import php from "../assets/php.png";
+import mysql from "../assets/mysql.png";
+import sql from "../assets/sql.webp";
+
+import a1 from "../assets/a1.jpg"
+import a2 from "../assets/a2.jpg"
+import a3 from "../assets/a3.jpg"
+
+import progress from "../assets/progress.jpg"
+
 
 const ServicesMore = () => {
   const services = [
@@ -31,33 +52,35 @@ const ServicesMore = () => {
     },
   ];
 
-   const benefits = [
+  const benefits = [
     {
-      icon: <FaSmile />,
+      icon: <FaSmile size={30} color="#179f99" />,
       title: "Increased Customer Satisfaction",
       desc: "Deliver better experiences and build long-term trust with your customers.",
     },
     {
-      icon: <FaChartLine />,
+      icon: <FaChartLine size={30} color="#179f99" />,
       title: "Increased Revenue",
       desc: "Boost your business growth with strategies that maximize profitability.",
     },
     {
-      icon: <FaUserGraduate />,
+      icon: <FaUserGraduate size={30} color="#179f99" />,
       title: "Upgradation of Resource Skills",
       desc: "Empower your team with the latest skills and technology expertise.",
     },
     {
-      icon: <FaFolderOpen />,
+      icon: <FaFolderOpen size={30} color="#179f99" />,
       title: "Enhanced Portfolio",
       desc: "Strengthen your portfolio with successful projects and innovative solutions.",
     },
     {
-      icon: <FaBolt />,
+      icon: <FaBolt size={30} color="#179f99" />,
       title: "Increased Efficiency",
       desc: "Save time and optimize processes for faster results and smoother operations.",
     },
   ];
+
+  const logos = [react, javascript, java, c, php, mysql, sql];
 
   const testimonials = [
     {
@@ -65,138 +88,221 @@ const ServicesMore = () => {
       name: "Jesse Deming",
       role: "Development Manager",
       company: "Perfection Learning",
+      image: a1,
     },
     {
       text: "The team delivered outstanding results and exceeded our expectations on every project.",
       name: "Sophia Carter",
       role: "CEO",
       company: "TechWave Inc.",
+      image: a2,
     },
     {
       text: "Great collaboration and excellent communication throughout the entire development process.",
       name: "Liam Johnson",
       role: "Product Manager",
       company: "InnovateX",
+      image: a3,
     },
     {
       text: "They are highly professional and always deliver quality work on time.",
       name: "Olivia Brown",
       role: "CTO",
       company: "Bright Solutions",
+      image: a2,
     },
     {
       text: "Our digital platform improved significantly thanks to their expertise and support.",
       name: "Ethan Wilson",
       role: "Founder",
       company: "FutureVision",
+      image: a2,
     },
   ];
 
   return (
     <>
-    <section className="services-point-section">
-      <img src={About} alt="Services" className="services-image" />
-      <div className="services-overlay animate-on-scroll">
-        <h1>Our Services</h1>
-        <p>
-          Your trusted partner in Digital Marketing, Recruitment, and Financial
-          Compliance.
-        </p>
-        <div className="breadcrumb">
-          <a href="/">Home</a> <span>›</span> <a href="/services">Services</a>
+      <section className="services-point-section">
+        <img src={About} alt="Services" className="services-image" />
+        <div className="services-overlay animate-on-scroll">
+          <h1>Our Services</h1>
+          <p>
+            Your trusted partner in Digital Marketing, Recruitment, and Financial
+            Compliance.
+          </p>
+          <div className="breadcrumb">
+            <a href="/">Home</a> <span>›</span> <a href="/services">Services</a>
+          </div>
         </div>
-      </div>
       </section>
 
-      <section className="services-section">
-      <div className="services-container">
-        {/* Left Side */}
-        <div className="services-left">
-          <p className="section-subtitle">Our Services</p>
-          <h2 className="section-title">
-            We Provide A Lot of <br /> Cool Services
-          </h2>
-          <p className="section-desc">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean.
-          </p>
-          <button className="services-btn">Contact Us</button>
-        </div>
-
-        {/* Right Side */}
-        <div className="services-right">
-          {services.map((service, index) => (
-            <div key={index} className="service-card">
-              <div className="service-icon-wrap">{service.icon}</div>
-              <h3 className="service-title">{service.title}</h3>
-              <p className="service-desc">{service.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    <section className="benefits-section">
-      <h2 className="benefits-title">Customer Benefits</h2>
-      <div className="benefits-container">
-        {/* Center Circle */}
-        <div className="benefits-center">
-          <div className="circle">
-            <span className="circle-icon">📊</span>
-            <p>Project Benefits</p>
+      <section className="alt-services-container">
+        {/* Service 1 - Digital Marketing */}
+        <div className="alt-service-row">
+          <div className="alt-service-text" data-aos="fade-right" data-aos-delay="1000">
+            <h2>Digital Marketing</h2>
+            <p>
+              Boost your online presence with our tailored digital marketing
+              strategies. From SEO and social media to paid campaigns, we help
+              your business connect with the right audience and drive measurable
+              results.
+            </p>
+          </div>
+          <div className="alt-service-image" data-aos="fade-left" data-aos-delay="1000">
+            <img src={digital} alt="Digital Marketing" />
           </div>
         </div>
 
-        {/* Benefit Items */}
-        <div className="benefits-list">
-          {benefits.map((benefit, index) => (
-            <div className="benefit-item" key={index}>
-              <div className="benefit-icon">{benefit.icon}</div>
-              <div>
-                <h3 className="benefit-title">{benefit.title}</h3>
-                <p className="benefit-desc">{benefit.desc}</p>
-              </div>
-            </div>
-          ))}
+        {/* Service 2 - Web & Software Development */}
+        <div className="alt-service-row">
+          <div className="alt-service-text" data-aos="fade-right" data-aos-delay="1000">
+            <h2>Web & Software Development</h2>
+            <p>
+              Build scalable, secure, and high-performing web and software
+              solutions tailored to your business needs. We use modern
+              technologies to deliver seamless user experiences.
+            </p>
+          </div>
+          <div className="alt-service-image" data-aos="fade-left" data-aos-delay="1000">
+            <img src={mobile} alt="Web Development" />
+          </div>
         </div>
-      </div>
-    </section>
-    
-    <section className="testimonial-section">
-      <h2 className="testimonial-title">
-        What Our <span>Clients</span> Say
-      </h2>
 
-      <Swiper
-        modules={[Pagination, Autoplay]}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop={true}
-        spaceBetween={30}
-        slidesPerView={1}
+        {/* Service 3 - Staff Augmentation */}
+        <div className="alt-service-row">
+          <div className="alt-service-text" data-aos="fade-right" data-aos-delay="1000">
+            <h2>Staff Augmentation</h2>
+            <p>
+              Scale your team quickly with our staff augmentation services. We
+              provide skilled professionals who integrate seamlessly with your
+              existing team to accelerate project delivery.
+            </p>
+          </div>
+          <div className="alt-service-image" data-aos="fade-left" data-aos-delay="1000">
+            <img src={staff} alt="Staff Augmentation" />
+          </div>
+        </div>
+
+        {/* Service 4 - Tax & Compliance Solutions */}
+        <div className="alt-service-row">
+          <div className="alt-service-text" data-aos="fade-right" data-aos-delay="1000">
+            <h2>Tax & Compliance Solutions</h2>
+            <p>
+              Simplify complex regulatory and compliance processes with our expert
+              solutions. We help businesses stay compliant with tax regulations
+              while reducing risks and improving efficiency.
+            </p>
+          </div>
+          <div className="alt-service-image" data-aos="fade-left" data-aos-delay="1000">
+            <img src={Taxx} alt="Tax Solutions" />
+          </div>
+        </div>
+      </section>
+
+
+
+      <section
+        className="benefits-section"
+        data-aos="fade-up"
+        data-aos-delay="1000" style={{ backgroundImage: `url(${wave})` }}
+
       >
-        {testimonials.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="testimonial-card">
-              <span className="quote-icon">“</span>
-              <p className="testimonial-text">{item.text}</p>
-              <div className="testimonial-footer">
+        <h2 className="benefits-title">Customer Benefits</h2>
+        <div className="benefits-container">
+          <div className="benefits-list">
+            {benefits.map((benefit, index) => (
+              <div className="benefit-item" key={index}>
+                <div className="benefit-icon">{benefit.icon}</div>
                 <div>
-                  <h4 className="client-name">{item.name},</h4>
-                  <p className="client-role">{item.role}</p>
+                  <h3 className="benefit-title">{benefit.title}</h3>
+                  <p className="benefit-desc">{benefit.desc}</p>
                 </div>
-                <div className="client-logo">{item.company}</div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            ))}
+          </div>
+        </div>
+      </section>
 
-       
-    
-    </section>
+
+
+      <div className="logos-wrapper">
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          spaceBetween={30}
+          slidesPerView={5}     // number of logos visible
+          loop={true}           // infinite loop
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          speed={1000}          // smooth speed
+          navigation={true}     // enable arrows
+        >
+          {logos.map((logo, index) => (
+            <SwiperSlide key={index}>
+              <img src={logo} alt={`Logo ${index}`} className="logo-img" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+
+      <section className="progress-section">
+        <div className="progress-container">
+          <h2>
+            Our <span>Process</span>
+          </h2>
+          <img
+            src= {progress}   
+            alt="Workflow Progress"
+          />
+        </div>
+      </section>
+
+
+
+      <section className="testimonial-section">
+        <h2 className="testimonial-title">
+          What Our <span>Clients</span> Say
+        </h2>
+
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          loop={true}
+          spaceBetween={30}
+          slidesPerView={1}
+        >
+          {testimonials.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="testimonial-card">
+                <span className="quote-icon">“</span>
+                <p className="testimonial-text">{item.text}</p>
+                <div className="testimonial-footer">
+                  <div className="client-info">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="client-image"
+                    />
+                    <div>
+                      <h4 className="client-name">{item.name},</h4>
+                      <p className="client-role">{item.role}</p>
+                    </div>
+                  </div>
+                  <div className="client-logo">{item.company}</div>
+                </div>
+              </div>
+            </SwiperSlide>
+
+
+          ))}
+        </Swiper>
+
+
+
+      </section>
     </>
   );
 };

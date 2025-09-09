@@ -81,18 +81,6 @@
   font-size: 14px;
   color: #aaa;
 }
- /* .social-icons i {
-  border: 2px solid #fff;
-  color: #fff;
-  font-size: 20px;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 50%;
-  transition: 0.3s ease;
-  cursor: pointer;
-  align-items: left;
-  
-} */
 
 .footer-column i:hover {
  color: #179f99; /* or any color you want  */
@@ -115,4 +103,53 @@
 }
 .footer-icon:hover {
   color: #179f99;   /* also change text color (optional) */
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 1024px) {
+  .footer-container {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-column {
+    min-width: 100%;
+    padding-left: 0;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-column h2,
+  .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-column p,
+  .footer-bottom {
+    font-size: 13px;
+  }
+
+  .footer-item {
+    font-size: 14px;
+  }
 }

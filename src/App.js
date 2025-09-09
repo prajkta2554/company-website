@@ -8,6 +8,7 @@ import AboutMore from './components/AboutMore';
 import Services from './components/Services';
 import ServicesMore from './components/ServicesMore';
 import Contact from './components/Contact';
+import ContactMore from './components/ContactMore';
 
 import AOS from "aos";
 import 'aos/dist/aos.css';
@@ -44,6 +45,7 @@ function App() {
         <Route path="/home" element={<><VideoSlider /><About /><Footer /></>} />
         <Route path="/about-more" element={<><AboutMore /><Footer /></>} />
         <Route path="/Services-more" element={<><ServicesMore /><Footer /></>} />
+        <Route path="/Contact-more" element={<><ContactMore /><Footer /></>} />
         <Route path="*" element={<h2 style={{ textAlign: "center" }}>404 Page Not Found</h2>} />
       </Routes>
     </BrowserRouter>
