@@ -20,6 +20,11 @@ import c from "../assets/c.png";
 import php from "../assets/php.png";
 import mysql from "../assets/mysql.png";
 import sql from "../assets/sql.webp";
+import cloud from "../assets/CLOUD1.jpg";
+import seo from "../assets/SEO.png";
+import Python from "../assets/python.png";
+import DM1 from "../assets/DM1.jpg";
+
 
 import a1 from "../assets/a1.jpg"
 import a2 from "../assets/a2.jpg"
@@ -80,40 +85,40 @@ const ServicesMore = () => {
     },
   ];
 
-  const logos = [react, javascript, java, c, php, mysql, sql];
+  const logos = [react, javascript, java, c, php, mysql, sql, Python, cloud, seo, DM1];
 
   const testimonials = [
     {
       text: "We have enjoyed a long-standing partnership with Mitr, spanning over eight years...",
-      name: "Jesse Deming",
+      name: "Ahraz Imtiyaz",
       role: "Development Manager",
       company: "Perfection Learning",
       image: a1,
     },
     {
       text: "The team delivered outstanding results and exceeded our expectations on every project.",
-      name: "Sophia Carter",
+      name: "Sunit Sharma",
       role: "CEO",
       company: "TechWave Inc.",
       image: a2,
     },
     {
       text: "Great collaboration and excellent communication throughout the entire development process.",
-      name: "Liam Johnson",
+      name: "Ritika Tiwari",
       role: "Product Manager",
       company: "InnovateX",
       image: a3,
     },
     {
       text: "They are highly professional and always deliver quality work on time.",
-      name: "Olivia Brown",
+      name: "Sunit Sharma",
       role: "CTO",
       company: "Bright Solutions",
       image: a2,
     },
     {
       text: "Our digital platform improved significantly thanks to their expertise and support.",
-      name: "Ethan Wilson",
+      name: "Sunit Sharma",
       role: "Founder",
       company: "FutureVision",
       image: a2,

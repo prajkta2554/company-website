@@ -135,137 +135,7 @@
   background: #e3e3e3;
 }
 
-.progress-section {
-  font-family: 'DM Sans', sans-serif;
-  /* padding: 80px 20px; */
-  text-align: center;
-  
-  padding-top: 80px;
-  
-}
-
-.progress-container h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 24px;
-  color: #111827; 
-}
-
-.progress-container h2 span {
-  color: #179f99; 
-}
-
-.progress-container img {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-   background-size: cover;
-  background-position: center;
-  
- 
-}
-
- /* Service-more client Review */
- 
- .testimonial-section {
-  text-align: center;
-  padding: 60px 20px;
-  background: #fff;
-}
-
-.testimonial-title {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
-
-.testimonial-title span {
-  color: #179f99; /* highlight */
-}
-
-.testimonial-card {
-  max-width: 900px;
-  max-height: 500px;
-  margin: 0 auto;
-  padding: 40px;
-  background: #f9f9f9;
-  border-radius: 12px;
-  position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  transition: transform 0.3s ease;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
-}
-
-.quote-icon {
-  font-size: 100px;
-  color: #179f99;
-  position: absolute;
-  top: 1rem;
-  left: 40px;
-}
-
-.testimonial-text {
-  margin: 0;
-  line-height: 1.6;
-  color: #444;
-  padding-left: 50px;
-  font-size: 16px;
-}
-
-.testimonial-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 25px;
-}
-
-.client-name {
-  color: #179f99;
-  font-size: 18px;
-  margin: 0;
-}
-
-.client-role {
-  color: #555;
-  font-size: 14px;
-  margin: 0;
-}
-
-.client-logo {
-  font-size: 14px;
-  font-weight: 600;
-  color: #444;
-}
-.client-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.client-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 70%; /* makes it circular */
-  object-fit: cover;
-  border: 2px solid #ddd;
-}
-
-
-/* Swiper Pagination Styling */
-.swiper-pagination-bullet {
-  background: #ccc;
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background: #179f99;
-}
-
-
+/* -------------------servicemore page---------------------------- */
 .services-point-section {
   position: relative;
   width: 100%;
@@ -422,7 +292,132 @@
   font-weight: bold;
 } */
 
+.progress-section {
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+  padding-top: 80px;
+  background-color: white;
+}
 
+.progress-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #111827; 
+
+}
+
+.progress-container h2 span {
+  color: #179f99; 
+}
+
+.progress-container img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center; 
+}
+
+ /* Service-more client Review */
+ 
+ .testimonial-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.testimonial-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.testimonial-title span {
+  color: #179f99; /* highlight */
+}
+
+.testimonial-card {
+  max-width: 900px;
+  max-height: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-icon {
+  font-size: 100px;
+  color: #179f99;
+  position: absolute;
+  top: 1rem;
+  left: 40px;
+}
+
+.testimonial-text {
+  margin: 0;
+  line-height: 1.6;
+  color: #444;
+  padding-left: 50px;
+  font-size: 16px;
+}
+
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.client-name {
+  color: #179f99;
+  font-size: 18px;
+  margin: 0;
+}
+
+.client-role {
+  color: #555;
+  font-size: 14px;
+  margin: 0;
+}
+
+.client-logo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.client-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 70%; /* makes it circular */
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+
+/* Swiper Pagination Styling */
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #179f99;
+}
 /* ================= Responsive ================= */
 
 /* Large screens to tablets */
