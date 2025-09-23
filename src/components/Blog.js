@@ -70,13 +70,12 @@ const Blog = () => {
       </div>
 
       {/* Categories */}
-      <div className="categories">
+      <div className="categories" data-aos="fade-up" data-aos-delay="100">
         {categories.map((cat) => (
           <button
             key={cat}
-            className={`category-btn ${
-              selectedCategory === cat ? "active" : ""
-            }`}
+            className={`category-btn ${selectedCategory === cat ? "active" : ""
+              }`}
             onClick={() => setSelectedCategory(cat)}
           >
             {cat}
@@ -85,7 +84,7 @@ const Blog = () => {
       </div>
 
       {/* Layout */}
-      <div className="blogs-layout">
+      <div className="blogs-layout" data-aos="fade-right" data-aos-delay="100">
         {/* Blog List */}
         <div className="blogs-list">
           {filteredBlogs.map((blog) => (
@@ -102,7 +101,7 @@ const Blog = () => {
 
         {/* Sidebar */}
         <div className="sidebar">
-          <div className="banner">
+          <div className="banner" data-aos="fade-left" data-aos-delay="100">
             <h3>Ready to Make a Difference?</h3>
             <p>
               Our company is an IT consulting and services company with rich
@@ -110,7 +109,7 @@ const Blog = () => {
             </p>
             <button className="banner-btn">Get Ahead of the Game</button>
           </div>
-          <div className="categories-list">
+          <div className="categories-list" data-aos="fade-left" data-aos-delay="100">
             <h4>Categories</h4>
             <ul>
               {categories.map((cat) => (
@@ -119,6 +118,27 @@ const Blog = () => {
             </ul>
           </div>
         </div>
+      </div>
+      {/* Contact Section */}
+      <div className="blog-contact-section" data-aos="fade-up" data-aos-delay="100">
+        <h2>How can we help you scale?</h2>
+        <p>We’re excited to hear from you, and brew your digital success together!</p>
+        <form className="blog-contact-form">
+          <div className="blog-form-row">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="tel" placeholder="Contact Number" required />
+            <input type="text" placeholder="Business Name" />
+          </div>
+          <textarea placeholder="Message" rows="4"></textarea>
+          <div className="blog-form-row">
+            <label>What is 8 + 1 ?</label>
+            <input type="text" placeholder="Type your answer" required />
+          </div>
+          <button type="submit" className="blog-submit-btn">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
