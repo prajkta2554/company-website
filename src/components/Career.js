@@ -1,69 +1,89 @@
-import React  from 'react';
-import './Career.css';
-
-import about from "../assets/About.jpg";
+import React from "react";
+import "./Career.css";
+import careerBanner from "../assets/banner1.png";
 
 const Career = () => {
-     const features = [
-    {
-      title: "Your role, your way",
-      description:
-        "They say if you do what you love, you'll love what you do. We don’t limit your role to set responsibilities, and instead support you to try hands at everything you're keen about!",
-      icon: "🌸",
-    },
-    {
-      title: "Squad, All Inclusive",
-      description:
-        "At our company, we have an inclusive workplace, ensuring a safe & fun work environment for every employee regardless of background, while recognizing differences and celebrating wins.",
-      icon: "✨",
-    },
-    {
-      title: "We Water Your Growth",
-      description:
-        "New skill on your mind? We’re here to help you learn! Choose a certification or training that helps you grow in your role. We’ve got you covered.",
-      icon: "🌱",
-    },
-    {
-      title: "Equal Opportunity",
-      description:
-        "We know our members by skill, not caste, gender, or orientation. Prove your skill and the squad's success is yours, just like yours is ours!",
-      icon: "⚖️",
-    },
-  ];
-
-    return (
-      <section className="contact-point-section">
-      <img src={about} alt="About" className="about-image" />
-      <div className="about-overlay animate-on-scroll">
-        <h1>Contact Us</h1>
-        <p>
-          Your trusted partner in Digital Marketing, Recruitment, and Financial
-          Compliance.
-        </p>
-        <div className="breadcrumb">
-          <a href="/">Home</a> <span>›</span> <a href="/about">Contact us</a>
+  return (
+    <div className="career-container">
+      {/* Banner Section */}
+      <div
+        className="career-banner"
+        style={{ backgroundImage: `url(${careerBanner})` }}
+      >
+        <div className="career-banner-content">
+          <h1>Career</h1>
+          <p>Join our team and shape the future with us.</p>
+          <div className="career-breadcrumb">
+            Home <span>›</span> Career
+          </div>
         </div>
       </div>
 
-      <div className="career-container">
-      <h1 className="career-heading">
-        As a part of <span className="highlight">Our Company</span>, you will..
-      </h1>
+      {/* === Open Positions Section === */}
+<section className="open-positions">
+  <h2>Open Positions</h2>
 
-
-      <div className="career-features">
-        {features.map((item, index) => (
-          <div className="career-card" key={index}>
-            <div className="career-icon">{item.icon}</div>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-          </div>
-        ))}
-      </div>
+  <div className="positions-grid">
+    <div className="position-card">
+      <h3>Frontend Developer</h3>
+      <p>
+        Build responsive, user-friendly interfaces with React and modern tools.
+      </p>
+      <button className="apply-btn">Apply Now</button>
     </div>
-      </section>
 
-      
-    );
-}
+    <div className="position-card">
+      <h3>Backend Developer</h3>
+      <p>
+        Work with Node.js and databases to design scalable APIs and backend systems.
+      </p>
+      <button className="apply-btn">Apply Now</button>
+    </div>
+
+    <div className="position-card">
+      <h3>UI/UX Designer</h3>
+      <p>
+        Create engaging and intuitive user experiences through clean, modern design.
+      </p>
+      <button className="apply-btn">Apply Now</button>
+    </div>
+  </div>
+</section>
+
+
+      {/* Apply Form Section */}
+      <section className="career-form">
+        <h2 className="career-form-title">Come, Join Us!</h2>
+        <p className="career-form-subtitle">We are excited to hear from you!</p>
+
+        <form className="apply-form">
+          <div className="form-row">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+          </div>
+          <div className="form-row">
+            <input type="text" placeholder="Contact Number" required />
+            <input type="text" placeholder="Preferred Role" required />
+          </div>
+
+          <div className="form-group">
+            <label>Attach Resume</label>
+            <div className="resume-upload">
+              <p>Drag & Drop Files Here</p>
+              <button type="button">Browse Files</button>
+            </div>
+          </div>
+
+          <div className="captcha">
+            <label>What is 9 + 8 ?</label>
+            <input type="text" placeholder="Type your answer" />
+          </div>
+
+          <button type="submit" className="submit-btn">Submit</button>
+        </form>
+      </section>
+    </div>
+  );
+};
+
 export default Career;

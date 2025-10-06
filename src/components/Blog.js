@@ -17,6 +17,14 @@ const categories = [
   "Security",
 ];
 
+const Tags = [
+  "#SharePointIntegration",
+  "#DocumentManagement #SaaS",
+  "#ApplicationDevelopment #Startups",
+  "#EnterpriseSolutions #CollaborationTools",
+  "#CloudBasedSoftware"
+];
+
 const blogs = [
   {
     id: 1,
@@ -46,101 +54,123 @@ const blogs = [
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [search, setSearch] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredBlogs = blogs.filter((blog) => {
-    return (
+  const filteredBlogs = blogs.filter(
+    (blog) =>
       (selectedCategory === "All" || blog.category === selectedCategory) &&
-      blog.title.toLowerCase().includes(search.toLowerCase())
-    );
-  });
+      blog.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
-    <div className="blogs-container">
-      <h1 className="blogs-title">Blogs</h1>
+    <>
+      <section className="blog-section">
+        {/* Blog Title */}
+        <h1 className="blogs-title">Blogs</h1>
 
-      {/* Search Bar */}
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Search blogs..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-      </div>
-
-      {/* Categories */}
-      <div className="categories" data-aos="fade-up" data-aos-delay="100">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            className={`category-btn ${selectedCategory === cat ? "active" : ""
-              }`}
-            onClick={() => setSelectedCategory(cat)}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
-
-      {/* Layout */}
-      <div className="blogs-layout" data-aos="fade-right" data-aos-delay="100">
-        {/* Blog List */}
-        <div className="blogs-list">
-          {filteredBlogs.map((blog) => (
-            <div key={blog.id} className="blog-card">
-              <img src={blog.image} alt={blog.title} className="blog-img" />
-              <div className="blog-info">
-                <h2>{blog.title}</h2>
-                <p>{blog.description}</p>
-                <button className="read-btn">Find out more</button>
-              </div>
+        <div className="blog-layout">
+          {/* Left Column - Blogs */}
+          <div className="blog-main">
+            
+            {/* 🔍 Search Bar */}
+            <div className="search-bar">
+              <input
+                type="text"
+                placeholder="Search blog..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
             </div>
-          ))}
-        </div>
 
-        {/* Sidebar */}
-        <div className="sidebar">
-          <div className="banner" data-aos="fade-left" data-aos-delay="100">
-            <h3>Ready to Make a Difference?</h3>
-            <p>
-              Our company is an IT consulting and services company with rich
-              experience working with enterprises.
-            </p>
-            <button className="banner-btn">Get Ahead of the Game</button>
-          </div>
-          <div className="categories-list" data-aos="fade-left" data-aos-delay="100">
-            <h4>Categories</h4>
-            <ul>
+            {/* Category Filter */}
+            <div className="category-filter">
               {categories.map((cat) => (
-                <li key={cat}>{cat}</li>
+                <button
+                  key={cat}
+                  className={`category-btn ${
+                    selectedCategory === cat ? "active" : ""
+                  }`}
+                  onClick={() => setSelectedCategory(cat)}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+
+            {/* Blog List */}
+            <div className="blogs-container">
+              {filteredBlogs.length > 0 ? (
+                filteredBlogs.map((blog) => (
+                  <div key={blog.id} className="blog-card">
+                    <img src={blog.image} alt={blog.title} className="blog-img" />
+                    <div className="blog-content">
+                      <h2>{blog.title}</h2>
+                      <p>{blog.description}</p>
+                      <button className="btn">Find out more</button>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <p className="no-results">No blogs found.</p>
+              )}
+            </div>
+          </div>
+
+          {/* Right Column - Sidebar */}
+          <aside className="blog-sidebar">
+            <h3>Categories</h3>
+            <ul>
+              {categories.map((cat, index) => (
+                <li key={index}>{cat}</li>
               ))}
             </ul>
-          </div>
+
+            <h3>Tags</h3>
+            <ul>
+              {Tags.map((tag, index) => (
+                <li key={index}>{tag}</li>
+              ))}
+            </ul>
+          </aside>
         </div>
-      </div>
-      {/* Contact Section */}
-      <div className="blog-contact-section" data-aos="fade-up" data-aos-delay="100">
-        <h2>How can we help you scale?</h2>
-        <p>We’re excited to hear from you, and brew your digital success together!</p>
-        <form className="blog-contact-form">
-          <div className="blog-form-row">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <input type="tel" placeholder="Contact Number" required />
-            <input type="text" placeholder="Business Name" />
+
+        {/* ✅ Reach Out Section */}
+        <section className="reachout-section">
+          <div className="reachout-container">
+            <div className="reachout-content">
+              <h2>Reach Out to Us</h2>
+              <p>
+                Have questions or want to collaborate?  
+                We’re here to listen and help you grow your business.
+              </p>
+
+              <form className="reachout-form">
+                <div className="form-row">
+                  <input type="text" placeholder="Your Name" required />
+                  <input type="email" placeholder="Your Email" required />
+                </div>
+
+                <input type="text" placeholder="Subject" required />
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+
+                <button type="submit" className="reachout-btn">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <div className="reachout-info">
+              <h3>Contact Information</h3>
+              <ul>
+                <li><strong>Email:</strong> contact@logiclite.com</li>
+                <li><strong>Phone:</strong> +91 98765 43210</li>
+                <li><strong>Address:</strong> Jaipur, India</li>
+              </ul>
+            </div>
           </div>
-          <textarea placeholder="Message" rows="4"></textarea>
-          <div className="blog-form-row">
-            <label>What is 8 + 1 ?</label>
-            <input type="text" placeholder="Type your answer" required />
-          </div>
-          <button type="submit" className="blog-submit-btn">
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
+        </section>
+      </section>
+    </>
   );
 };
 

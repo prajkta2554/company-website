@@ -39,8 +39,7 @@ function App() {
               <About />
               <Services />
               <Contact />
-               <Blog />
-              <Career />
+               
               <Footer />
             </>
           }
