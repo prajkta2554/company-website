@@ -56,11 +56,19 @@ const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredBlogs = blogs.filter(
-    (blog) =>
-      (selectedCategory === "All" || blog.category === selectedCategory) &&
-      blog.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+const filteredBlogs = blogs.filter((blog) => {
+  const matchesCategory =
+    selectedCategory === "All" || blog.category === selectedCategory;
+
+  const matchesSearch =
+    blog.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    blog.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    blog.category.toLowerCase().includes(searchTerm.toLowerCase());
+
+  return matchesCategory && matchesSearch;
+});
+
+
 
   return (
     <>

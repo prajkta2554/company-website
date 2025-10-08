@@ -95,51 +95,65 @@
   cursor: pointer;
   color: black;
 }
-/* ✅ Responsive Navbar */
+/* 🌐 Responsive Navbar Fix */
 @media (max-width: 900px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
   .navbar-container {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .menu-toggle {
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #179f99;
-    position: absolute;
-    right: 40px;
-    top: 18px;
+  /* Logo + Toggle alignment */
+  .logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
   }
 
+  .logo {
+    height: 45px;
+    margin-left: 0; /* remove big left margin */
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    color: #179f99;
+    cursor: pointer;
+    margin-right: 100px; /* adds small right space */
+  }
+
+  /* Hide links by default on mobile */
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 65px;
-    left: 0;
-    padding: 20px 0;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    background: white;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
   }
 
+  /* When menu is open */
   .nav-links.open {
     display: flex;
   }
 
   .nav-links li {
-    text-align: center;
     width: 100%;
-    padding: 10px 0;
+    text-align: left;
+    padding: 10px 20px;
   }
 
   .nav-links li a {
-    font-size: 1.2rem;
-  }
-
-  .logo {
-    margin-left: 0;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.1rem;
   }
 }
 
