@@ -1,14 +1,32 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 70px;
+}
+
+/* NAVBAR BASE */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  height: 50px;
+  height: 80px;
   width: 100%;
   z-index: 1000;
   background-color: white;
   padding: 15px 40px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-family: 'DM Sans', sans-serif;
 }
 
 .navbar-container {
@@ -24,18 +42,15 @@
   align-items: center;
   gap: 10px;
   transition: transform 0.3s ease;
-
 }
 
-/* Slight left shift on hover */
 .logo-container:hover {
   transform: translateX(-5px);
 }
 
 .logo {
   height: 50px;
-  margin-left: -9rem;
-  
+  margin-left: 0;
 }
 
 .brand-name {
@@ -44,6 +59,7 @@
   color: #179f99;
 }
 
+/* Nav Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -61,16 +77,14 @@
   letter-spacing: normal;
   transition: color 0.3s ease;
 }
+
 .nav-links a.active {
   color: #179f99;
-
-  
-  
 }
+
 .nav-links li a:hover {
   color: #179f99;
 }
-
 
 .nav-links li a::after {
   content: "";
@@ -89,14 +103,16 @@
   transform: translateX(-50%) scale(1);
 }
 
+/* Menu Toggle */
 .menu-toggle {
   display: none;
   font-size: 2rem;
   cursor: pointer;
   color: black;
 }
-/* 🌐 Responsive Navbar Fix */
-@media (max-width: 900px) {
+
+/*TABLET & MOBILE - max-width: 768px */
+@media (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
   }
@@ -106,29 +122,23 @@
     align-items: flex-start;
   }
 
-  /* Logo + Toggle alignment */
   .logo-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 0;
   }
 
   .logo {
     height: 45px;
-    margin-left: 0; /* remove big left margin */
+    margin-left: 0;
   }
 
   .menu-toggle {
     display: block;
     font-size: 1.8rem;
-    color: #179f99;
-    cursor: pointer;
-    margin-right: 100px; /* adds small right space */
   }
 
-  /* Hide links by default on mobile */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -138,7 +148,6 @@
     border-top: 1px solid #ddd;
   }
 
-  /* When menu is open */
   .nav-links.open {
     display: flex;
   }
@@ -157,3 +166,22 @@
   }
 }
 
+/*EXTRA SMALL MOBILE - max-width: 320px */
+@media (max-width: 320px) {
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .menu-toggle {
+    font-size: 1.6rem;
+    padding-right: 20px;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}

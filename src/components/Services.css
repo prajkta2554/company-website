@@ -5,6 +5,7 @@
   text-align: center;
   font-family: 'DM Sans', sans-serif;
   margin-top: -3rem;
+  padding: 60px 10%;
 }
 
 .services-title {
@@ -135,6 +136,39 @@
   background: #e3e3e3;
 }
 
+/* Mobile View */
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .services-title {
+    font-size: 24px;
+    margin-top: 5px;
+  }
+
+  .flip-card {
+    height: 280px;
+  }
+
+  .flip-front h3 {
+    font-size: 1.3rem;
+  }
+
+  .flip-front p,
+  .flip-content p {
+    font-size: 0.85rem;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 1.5rem;
+  }
+}
+
 /* -------------------servicemore page---------------------------- */
 .services-point-section {
   position: relative;
@@ -182,7 +216,7 @@
   font-size: 1.125rem;        /* ~18px */
   line-height: 1.6;
   margin-bottom: 16px;
-  color: #f0f0f0;
+  /* color: #f0f0f0; */
 }
 
 .breadcrumb {

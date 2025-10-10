@@ -1,5 +1,3 @@
-// Contact.js
-
 import React from "react";
 import "./Contact.css";
 // import { FaStar } from "react-icons/fa";

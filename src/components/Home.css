@@ -1,52 +1,11 @@
-/* .hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.video-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  color: white;
-} */
 
 .video-slider {
   position: relative;
   min-width: 1000px;
   height: 90vh;
-  /* margin: 40px auto; */
   overflow: hidden;
-  /* border-radius: 12px; */
   background: #000;
-}
-
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 2;
-}
-
-.animated-text {
-  font-size: 3rem;
-  font-weight: bold;
-  animation: fadeIn 1s ease-in-out;
+  
 }
 
 .video-container {
@@ -67,7 +26,15 @@
   width: 100%;
   height: 100%;
   object-fit: fill;
-  /* border-radius: 12px; */
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
 }
 
 .animated-text {
@@ -75,21 +42,13 @@
   font-weight: bold;
   letter-spacing: 2px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  /* background: linear-gradient(90deg, #facc15, #f472b6, #60a5fa); */
   background-color: white;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text;  /* Gradient text instead of white */
   -webkit-text-fill-color: transparent;
-  margin-top: 50px;
-  /* animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
-}
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+   margin-top: 50px;
+  animation: fadeIn 1s ease-in-out;  /* Fade-in animation */
 }
 
-@keyframes blink {
-  50% { border-color: transparent; } */
-}
 .buttons {
   margin-top: 30px;
   display: flex;
@@ -133,6 +92,7 @@
 
   .animated-text {
     font-size: 2.5rem;
+
   }
 }
 
@@ -150,6 +110,7 @@
   .buttons {
     flex-direction: column;
     gap: 15px;
+    align-items: center;
   }
 
   .btn {
