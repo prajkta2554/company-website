@@ -242,7 +242,7 @@
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
-  .services-point-section { height: 45vh; }
+  .services-point-section { height: 70vh; }
   .services-overlay h1 { font-size: 2.2rem; }
   .services-overlay p { font-size: 1rem; }
 }

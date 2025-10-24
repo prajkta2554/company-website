@@ -10,6 +10,13 @@ const Navbar = () => {
     setIsOpen(!isOpen); 
   };
 
+ const handleLinkClick = (e) => {
+    // Optional: prevent default if using SPA scroll
+    // e.preventDefault();
+
+    setIsOpen(false); // Close the menu
+  };
+
 
   return (
     <nav className="navbar" >

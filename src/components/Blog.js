@@ -139,7 +139,7 @@ const filteredBlogs = blogs.filter((blog) => {
                 <li key={index}>{tag}</li>
               ))}
             </ul>
-          </aside>
+          </aside>  
         </div>
 
         {/* ✅ Reach Out Section */}

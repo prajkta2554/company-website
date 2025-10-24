@@ -223,3 +223,66 @@
 .submit-btn:hover {
   background: #179f99;
 }
+/* ---------- Responsive Design ---------- */
+
+/* For tablets and small laptops (≤ 768px) */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .apply-form {
+    padding: 15px;
+  }
+
+  .form-row input,
+  .captcha input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .resume-upload {
+    padding: 16px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* For mobile phones (≤ 480px) */
+@media (max-width: 480px) {
+  .apply-form {
+    padding: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-row input,
+  .captcha input {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .resume-upload {
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .resume-upload button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+}
