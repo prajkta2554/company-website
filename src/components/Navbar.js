@@ -15,7 +15,7 @@ const Navbar = () => {
     // e.preventDefault();
 
     setIsOpen(false); // Close the menu
-  };
+  };                                     
 
 
   return (

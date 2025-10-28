@@ -26,7 +26,7 @@ const VideoSlider = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextVideo, 3000); // Change every 3s
+    const interval = setInterval(nextVideo, 3000); //Change every 3s
     return () => clearInterval(interval);
   }, []);
 

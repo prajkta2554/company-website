@@ -565,8 +565,6 @@ body {
   margin-bottom: 18px;
 }
 
-
-
 .breadcrumb {
   font-size: 1rem;
 }
@@ -585,6 +583,30 @@ body {
   margin: 0 5px;
 }
 
+/* 📱 Extra Small Devices (up to 320px) */
+@media (max-width: 320px) {
+  .Who-content {
+    padding: 25px 10px;
+    gap: 15px;
+  }
+
+  .wedo-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .wedo-content p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .wedo-image {
+    max-width: 250px;
+  }
+
+  .breadcrumb {
+    font-size: 0.85rem;
+  }
+}
 /* ================= Header & Titles ================= */
 .why-header {
   text-align: center;
