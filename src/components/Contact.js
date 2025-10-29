@@ -7,7 +7,7 @@ import 'react-phone-input-2/lib/style.css';
 const Contact = () => {
   return (
     <div className="heading">
-      <h4 data-aos="fade-down" data-aos-delay="100"> Contact US</h4>   
+      <h4 data-aos="fade-down" data-aos-delay="100">Contact US</h4>   
     <div className="contact-section">
       <div className="contact-left"  data-aos="fade-left"
               data-aos-delay="100">
